@@ -35,11 +35,11 @@ class MainActivity : AppCompatActivity() {
                     seekBar: SeekBar,
                     i: Int,
                     b: Boolean
-            ) {
-                // Display the current progress of SeekBar
-                text_view.text = "Volume : $i"
-            }
-            override fun onStartTrackingTouch(seekBar: SeekBar) {
+                ) {
+                    // Display the current progress of SeekBar
+                    text_view.text = "Volume : $i"
+                }
+                override fun onStartTrackingTouch(seekBar: SeekBar) {
                 // Do something
                 Toast.makeText(applicationContext, "start tracking", Toast.LENGTH_SHORT).show()
             }
