@@ -40,13 +40,13 @@ class MainActivity : AppCompatActivity() {
                     text_view.text = "Volume : $i"
                 }
                 override fun onStartTrackingTouch(seekBar: SeekBar) {
-                // Do something
-                Toast.makeText(applicationContext, "start tracking", Toast.LENGTH_SHORT).show()
-            }
-            override fun onStopTrackingTouch(seekBar: SeekBar) {
-                // Do something
-                Toast.makeText(applicationContext, "stop tracking", Toast.LENGTH_SHORT).show()
-            }
+                    // Do something
+                    Toast.makeText(applicationContext, "start tracking", Toast.LENGTH_SHORT).show()
+                }
+                override fun onStopTrackingTouch(seekBar: SeekBar) {
+                    // Do something
+                    Toast.makeText(applicationContext, "stop tracking", Toast.LENGTH_SHORT).show()
+                }
         })
     }
     fun clickSettings(view: View) {}
