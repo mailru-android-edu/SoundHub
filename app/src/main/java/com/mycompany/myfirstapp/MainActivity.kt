@@ -3,15 +3,11 @@ package com.mycompany.myfirstapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.Settings
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import android.widget.SeekBar
 import android.widget.ImageView
-
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,7 +16,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val imageView = findViewById<ImageView>(R.id.Avatar)
-
         val imgResId = R.drawable.face
         var resId = imgResId
         imageView.setImageResource(imgResId)
