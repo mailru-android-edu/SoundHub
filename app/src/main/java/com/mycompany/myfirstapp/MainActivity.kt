@@ -47,7 +47,8 @@ class MainActivity : AppCompatActivity() {
                     // Do something
                     Toast.makeText(applicationContext, "stop tracking", Toast.LENGTH_SHORT).show()
                 }
-        })
+            }
+        )
     }
     fun clickSettings(view: View) {}
 }
