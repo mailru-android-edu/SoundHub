@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity">
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:text="Option 1" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:text="Option 2" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:text="Option 3" />
+
+    <Button
+        android:id="@+id/btn_import"
+        android:layout_width="170dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_margin="90dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Import"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
