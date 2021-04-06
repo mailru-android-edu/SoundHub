@@ -1,9 +1,9 @@
 package com.mycompany.myfirstapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
 class DevicesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
