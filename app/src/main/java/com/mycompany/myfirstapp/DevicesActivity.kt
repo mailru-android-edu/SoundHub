@@ -1,10 +1,6 @@
 package com.mycompany.myfirstapp
 
 import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import android.widget.TextView
-import android.content.Intent
-import android.view.View
 import android.widget.Button
 import android.widget.Toast
 
@@ -34,7 +30,5 @@ class DevicesActivity : AppCompatActivity() {
         Button5.setOnClickListener {
             Toast.makeText(this, "Идёт подключение", Toast.LENGTH_SHORT).show()
         }
-
     }
-
 }
