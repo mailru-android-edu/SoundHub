@@ -1,12 +1,12 @@
 package com.mycompany.myfirstapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import android.widget.SeekBar
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -29,11 +29,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         // Set a SeekBar change listener
-        seekBarVolume.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
+        seekBarVolume.setOnSeekBarChangeListener(
+            object:SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(
                 seekBar:SeekBar,
                 i:Int,
-                b:Boolean) {
+                b:Boolean
+            ) {
                 // Display the current progress of SeekBar
                 text_view.text = "Volume : $i"
             }
