@@ -14,16 +14,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         Intent(this, MainActivity::class.java)
         val connectButton: Button = findViewById(R.id.connectButton)
-        connectButton.setOnClickListener{
-            var bluetooth: BluetoothAdapter?  = BluetoothAdapter.getDefaultAdapter()
-            var status:String
-            if (bluetooth!=null){
-                if(bluetooth.isEnabled()){
-                    val myDeviceAddress: String  = bluetooth.getAddress()
+        connectButton.setOnClickListener {
+            var bluetooth: BluetoothAdapter? = BluetoothAdapter.getDefaultAdapter()
+            var status: String
+            if (bluetooth != null){
+                if (bluetooth.isEnabled) {
+                    val myDeviceAddress: String = bluetooth.getAddress()
                     val myDeviceName: String = bluetooth.name
                     status = "$myDeviceName : $myDeviceAddress"
                 } else {
-                    //Предложим включить
+                    // Предложим включить
                     status = "Bluetooth выключен"
                     val enableBtIntent = Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE)
                     startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT)
