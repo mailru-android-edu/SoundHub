@@ -1,4 +1,4 @@
-package com.example.soundhub_app
+package com.example.soundhubApp
 
 import android.bluetooth.BluetoothAdapter
 import android.content.Intent
