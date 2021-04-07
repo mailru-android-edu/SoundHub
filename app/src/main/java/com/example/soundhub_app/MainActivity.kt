@@ -8,7 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
-    private val REQUEST_ENABLE_BT = 1
+    private val requestEnableBt = 1
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
                     // Предложим включить
                     status = "Bluetooth выключен"
                     val enableBtIntent = Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE)
-                    startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT)
+                    startActivityForResult(enableBtIntent, requestEnableBt)
                 }
                 Toast.makeText(this, status, Toast.LENGTH_LONG).show()
             }
