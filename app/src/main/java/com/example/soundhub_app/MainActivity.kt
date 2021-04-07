@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
                     val enableBtIntent = Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE)
                     startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT)
                 }
-                Toast.makeText(this, status, Toast.LENGTH_LONG).show();
+                Toast.makeText(this, status, Toast.LENGTH_LONG).show()
             }
         }
     }
