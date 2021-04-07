@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         connectButton.setOnClickListener {
             var bluetooth: BluetoothAdapter? = BluetoothAdapter.getDefaultAdapter()
             var status: String
-            if (bluetooth != null){
+            if (bluetooth != null) {
                 if (bluetooth.isEnabled) {
                     val myDeviceAddress: String = bluetooth.getAddress()
                     val myDeviceName: String = bluetooth.name
