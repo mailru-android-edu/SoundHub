@@ -3,11 +3,14 @@ package com.example.soundhubApp
 import android.bluetooth.BluetoothAdapter
 import android.content.Intent
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import android.view.View
-import android.widget.*
+import android.widget.Button
+import android.widget.ImageView
+import android.widget.SeekBar
+import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     private val requestEnableBt = 1
@@ -17,8 +20,8 @@ class MainActivity : AppCompatActivity() {
 
         val imageView: ImageView = findViewById(R.id.Avatar)
         val imgResId = R.drawable.face
-        val seekBarVolume:SeekBar = findViewById(R.id.seekBarVolume)
-        val btnDa:Button = findViewById(R.id.btnDa)
+        val seekBarVolume: SeekBar = findViewById(R.id.seekBarVolume)
+        val btnDa: Button = findViewById(R.id.btnDa)
         val fabSettings: FloatingActionButton = findViewById(R.id.fabSettings)
         val mainDevice: Button = findViewById(R.id.mainDevice)
         val text_view: TextView = findViewById(R.id.text_view)
