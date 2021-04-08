@@ -12,7 +12,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-class MainActivity: AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
     private val requestEnableBt = 1
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -56,12 +56,8 @@ class MainActivity: AppCompatActivity() {
             }
         }
         // Set a SeekBar change listener
-        seekBarVolume.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener {
-            override fun onProgressChanged(
-                    seekBar: SeekBar,
-                    i: Int,
-                    b: Boolean
-            ) {
+        seekBarVolume.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
+            override fun onProgressChanged(seekBar: SeekBar, i: Int, b: Boolean) {
                 text_view.text = "Volume : $i"
             }
 
@@ -73,7 +69,8 @@ class MainActivity: AppCompatActivity() {
             override fun onStopTrackingTouch(seekBar: SeekBar) {
                 Toast.makeText(applicationContext, "stop tracking", Toast.LENGTH_SHORT).show()
             }
-        })
+        }
+        )
     }
 
     fun clickSettings(view: View) {}
