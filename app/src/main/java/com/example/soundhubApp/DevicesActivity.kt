@@ -1,4 +1,5 @@
 package com.example.soundhubApp
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -30,7 +31,5 @@ class DevicesActivity : AppCompatActivity() {
         button5.setOnClickListener {
             Toast.makeText(this, "Идёт подключение", Toast.LENGTH_SHORT).show()
         }
-
     }
-
 }
