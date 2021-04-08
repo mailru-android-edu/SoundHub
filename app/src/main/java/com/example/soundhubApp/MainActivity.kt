@@ -63,16 +63,14 @@ class MainActivity : AppCompatActivity() {
             }
             override fun onStartTrackingTouch(seekBar: SeekBar) {
                 // Do something
-                Toast.makeText(applicationContext,"start tracking",Toast.LENGTH_SHORT).show()
+                Toast.makeText(applicationContext, "start tracking", Toast.LENGTH_SHORT).show()
             }
             override fun onStopTrackingTouch(seekBar: SeekBar) {
                 // Do something
-                Toast.makeText(applicationContext,"stop tracking",Toast.LENGTH_SHORT).show()
+                Toast.makeText(applicationContext,"stop tracking", Toast.LENGTH_SHORT).show()
             }
-        })
+        }
+        )
     }
     fun clickSettings(view: View) {}
 }
-
-
-
