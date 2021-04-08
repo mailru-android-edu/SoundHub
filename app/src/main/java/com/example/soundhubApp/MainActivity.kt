@@ -29,7 +29,6 @@ class MainActivity : AppCompatActivity() {
         var resId = imgResId
         imageView.setImageResource(imgResId)
 
-
         btnDa.setOnClickListener {
             val intent = Intent(this, DevicesActivity::class.java)
             startActivity(intent)
@@ -58,10 +57,7 @@ class MainActivity : AppCompatActivity() {
         }
         // Set a SeekBar change listener
         seekBarVolume.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
-            override fun onProgressChanged(
-                    seekBar:SeekBar,
-                    i:Int,
-                    b:Boolean) {
+            override fun onProgressChanged(seekBar: SeekBar, i: Int, b: Boolean) {
                 // Display the current progress of SeekBar
                 text_view.text = "Volume : $i"
             }
