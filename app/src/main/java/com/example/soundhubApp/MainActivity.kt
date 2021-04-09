@@ -56,7 +56,8 @@ class MainActivity : AppCompatActivity() {
             }
         }
         // Set a SeekBar change listener
-        seekBarVolume.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
+        seekBarVolume.setOnSeekBarChangeListener(
+            object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar, i: Int, b: Boolean) {
                 text_view.text = "Volume : $i"
             }
