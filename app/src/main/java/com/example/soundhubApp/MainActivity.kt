@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+    
         val imageView: ImageView = findViewById(R.id.Avatar)
         val imgResId = R.drawable.face
         val seekBarVolume: SeekBar = findViewById(R.id.seekBarVolume)
@@ -25,10 +25,11 @@ class MainActivity : AppCompatActivity() {
         val fabSettings: FloatingActionButton = findViewById(R.id.fabSettings)
         val mainDevice: Button = findViewById(R.id.mainDevice)
         val text_view: TextView = findViewById(R.id.text_view)
-
+    
         var resId = imgResId
         imageView.setImageResource(imgResId)
-
+    
+    
         btnDa.setOnClickListener {
             val intent = Intent(this, DevicesActivity::class.java)
             startActivity(intent)
@@ -37,7 +38,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SettingsActivity::class.java)
             startActivity(intent)
         }
-
+    
         mainDevice.setOnClickListener {
             val bluetooth: BluetoothAdapter? = BluetoothAdapter.getDefaultAdapter()
             var status: String
@@ -58,20 +59,21 @@ class MainActivity : AppCompatActivity() {
         // Set a SeekBar change listener
         seekBarVolume.setOnSeekBarChangeListener(
             object : SeekBar.OnSeekBarChangeListener {
-            override fun onProgressChanged(seekBar: SeekBar, i: Int, b: Boolean) {
-                text_view.text = "Volume : $i"
+                override fun onProgressChanged(seekBar: SeekBar, i: Int, b: Boolean) {
+                    text_view.text = "Volume : $i"
+                }
+            
+                override fun onStartTrackingTouch(seekBar: SeekBar) {
+                    Toast.makeText(applicationContext, "start tracking", Toast.LENGTH_SHORT)
+                        .show()
+                }
+            
+                override fun onStopTrackingTouch(seekBar: SeekBar) {
+                    Toast.makeText(applicationContext, "stop tracking", Toast.LENGTH_SHORT)
+                        .show()
+                }
             }
-
-            override fun onStartTrackingTouch(seekBar: SeekBar) {
-                Toast.makeText(applicationContext, "start tracking", Toast.LENGTH_SHORT)
-                    .show()
-            }
-
-            override fun onStopTrackingTouch(seekBar: SeekBar) {
-                Toast.makeText(applicationContext, "stop tracking", Toast.LENGTH_SHORT).show()
-            }
-        })
+        )
     }
-
     fun clickSettings(view: View) {}
 }
