@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-    
+        
         val imageView: ImageView = findViewById(R.id.Avatar)
         val imgResId = R.drawable.face
         val seekBarVolume: SeekBar = findViewById(R.id.seekBarVolume)
@@ -25,10 +25,8 @@ class MainActivity : AppCompatActivity() {
         val fabSettings: FloatingActionButton = findViewById(R.id.fabSettings)
         val mainDevice: Button = findViewById(R.id.mainDevice)
         val text_view: TextView = findViewById(R.id.text_view)
-    
         var resId = imgResId
         imageView.setImageResource(imgResId)
-    
     
         btnDa.setOnClickListener {
             val intent = Intent(this, DevicesActivity::class.java)
@@ -38,7 +36,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SettingsActivity::class.java)
             startActivity(intent)
         }
-    
+        
         mainDevice.setOnClickListener {
             val bluetooth: BluetoothAdapter? = BluetoothAdapter.getDefaultAdapter()
             var status: String
