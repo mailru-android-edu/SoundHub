@@ -64,14 +64,13 @@ class MainActivity : AppCompatActivity() {
 
             override fun onStartTrackingTouch(seekBar: SeekBar) {
                 Toast.makeText(applicationContext, "start tracking", Toast.LENGTH_SHORT)
-                        .show()
+                    .show()
             }
 
             override fun onStopTrackingTouch(seekBar: SeekBar) {
                 Toast.makeText(applicationContext, "stop tracking", Toast.LENGTH_SHORT).show()
             }
-        }
-        )
+        })
     }
 
     fun clickSettings(view: View) {}
