@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         val btnDa: Button = findViewById(R.id.btnDa)
         val fabSettings: FloatingActionButton = findViewById(R.id.fabSettings)
         val mainDevice: Button = findViewById(R.id.mainDevice)
-        val text_view: TextView = findViewById(R.id.text_view)
+        val textViewMain: TextView = findViewById(R.id.text_view)
         var resId = imgResId
         imageView.setImageResource(imgResId)
         btnDa.setOnClickListener {
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         seekBarVolume.setOnSeekBarChangeListener(
             object : SeekBar.OnSeekBarChangeListener {
                 override fun onProgressChanged(seekBar: SeekBar, i: Int, b: Boolean) {
-                    text_view.text = "Volume : $i"
+                    textViewMain.text = "Volume : $i"
                 }
                 override fun onStartTrackingTouch(seekBar: SeekBar) {
                     Toast.makeText(applicationContext, "start tracking", Toast.LENGTH_SHORT)
