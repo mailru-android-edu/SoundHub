@@ -68,5 +68,4 @@ class MainActivity : AppCompatActivity() {
             }
         )
     }
-    fun clickSettings(view: View) {}
 }
