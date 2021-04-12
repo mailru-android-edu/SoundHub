@@ -3,7 +3,7 @@ package com.example.soundhubApp
 import android.bluetooth.BluetoothAdapter
 import android.content.Intent
 import android.os.Bundle
-//import android.view.View
+// import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.SeekBar
@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
             val bluetooth: BluetoothAdapter? = BluetoothAdapter.getDefaultAdapter()
             var status: String
             if (bluetooth != null) {
+                // Проверим включен ли BT
                 if (bluetooth.isEnabled) {
                     val myDeviceAddress: String = bluetooth.getAddress()
                     val myDeviceName: String = bluetooth.name
