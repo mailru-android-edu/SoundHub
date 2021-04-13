@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.soundhubApp">
+    package="com.soundhub.soundhubapp">
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <application
@@ -10,26 +10,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SoundHub_app">
-        <activity android:name="com.example.soundhubApp.MainActivity">
+        <activity android:name="com.soundhub.soundhubapp.MainActivity">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
         </activity>
         <activity
-                android:name=".SettingsActivity"
-                android:parentActivityName=".MainActivity">
+                android:name="com.soundhub.soundhubapp.SettingsActivity"
+                android:parentActivityName="com.soundhub.soundhubapp.MainActivity">
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
-                    android:value=".MainActivity" />
+                    android:value="com.soundhub.soundhubapp.MainActivity" />
         </activity>
         <activity
-                android:name=".DevicesActivity"
-                android:parentActivityName=".MainActivity">
+                android:name="com.soundhub.soundhubapp.DevicesActivity"
+                android:parentActivityName="com.soundhub.soundhubapp.MainActivity">
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
-                    android:value=".MainActivity" />
+                    android:value="com.soundhub.soundhubapp.MainActivity" />
         </activity>
     </application>
 

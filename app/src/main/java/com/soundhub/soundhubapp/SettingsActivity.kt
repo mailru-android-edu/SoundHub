@@ -1,4 +1,4 @@
-package com.example.soundhubApp
+package com.soundhub.soundhubapp
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
