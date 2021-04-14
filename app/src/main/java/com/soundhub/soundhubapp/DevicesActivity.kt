@@ -9,7 +9,7 @@ class DevicesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_devices)
-        val connectionInProgress: String = "Идет подключение"
+        val connectionInProgress: String = getString(R.string.connectionInProgress)
         val button1: Button = findViewById(R.id.ad_1)
         button1.setOnClickListener {
             Toast.makeText(this, connectionInProgress, Toast.LENGTH_SHORT).show()
