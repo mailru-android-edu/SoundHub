@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">SoundHub_app</string>
+    <string name="app_name">SoundHub</string>
+    <string name="my_smartphone">My smartphone</string>
+    <string name="GoSettings">TODO</string>
+    <string name="ConnectedDevices">Подключенные устройства</string>
+    <string name="AvailableDevices">Доступные устройства</string>
+    <string name="d_1">Устройство 1</string>
+    <string name="d_2">Устройство 2</string>
+    <string name="d_3">Устройство 3</string>
+    <string name="d_n">Устройство -n</string>
+    <string name="ad_1">Устройство 1</string>
+    <string name="ad_2">Устройство 2</string>
+    <string name="ad_3">Устройство 3</string>
+    <string name="ad_4">Устройство 4</string>
+    <string name="connectionInProgress">Идет подключение</string>
+    <string name="Import">TODO</string>
+    <string name="this_is_imageview">This is imageView</string>
+
 </resources>
