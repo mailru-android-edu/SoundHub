@@ -13,7 +13,10 @@
     <string name="ad_3">Устройство 3</string>
     <string name="ad_4">Устройство 4</string>
     <string name="connectionInProgress">Идет подключение</string>
+    <string name="noDevicesAvailable">Нет доступных устройств</string>
     <string name="Import">TODO</string>
     <string name="this_is_imageview">This is imageView</string>
+    <string name="start_scanning">Поиск устройств</string>
+    <string name="stop_scanning">Остановить</string>
 
 </resources>
